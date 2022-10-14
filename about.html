@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Food Blog</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Food Blog Web Template">
+    <meta name="keywords" content="food, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="img/favicon.ico" rel="shortcut icon" />
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/A.bootstrap.min.css+font-awesome.min.css+owl.carousel.css+animate.css+style.css,Mcc.GAeRvAPpPb.css.pagespeed.cf.Y_36m_spz3.css" />
+    <!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+    <script nonce="2d88fb43-7185-4717-98d1-7a25f783ebde">
+        (function(w, d) {
+            ! function(a, e, t, r) {
+                a.zarazData = a.zarazData || {};
+                a.zarazData.executed = [];
+                a.zaraz = {
+                    deferred: [],
+                    listeners: []
+                };
+                a.zaraz.q = [];
+                a.zaraz._f = function(e) {
+                    return function() {
+                        var t = Array.prototype.slice.call(arguments);
+                        a.zaraz.q.push({
+                            m: e,
+                            a: t
+                        })
+                    }
+                };
+                for (const e of ["track", "set", "debug"]) a.zaraz[e] = a.zaraz._f(e);
+                a.zaraz.init = () => {
+                    var t = e.getElementsByTagName(r)[0],
+                        z = e.createElement(r),
+                        n = e.getElementsByTagName("title")[0];
+                    n && (a.zarazData.t = e.getElementsByTagName("title")[0].text);
+                    a.zarazData.x = Math.random();
+                    a.zarazData.w = a.screen.width;
+                    a.zarazData.h = a.screen.height;
+                    a.zarazData.j = a.innerHeight;
+                    a.zarazData.e = a.innerWidth;
+                    a.zarazData.l = a.location.href;
+                    a.zarazData.r = e.referrer;
+                    a.zarazData.k = a.screen.colorDepth;
+                    a.zarazData.n = e.characterSet;
+                    a.zarazData.o = (new Date).getTimezoneOffset();
+                    a.zarazData.q = [];
+                    for (; a.zaraz.q.length;) {
+                        const e = a.zaraz.q.shift();
+                        a.zarazData.q.push(e)
+                    }
+                    z.defer = !0;
+                    for (const e of [localStorage, sessionStorage]) Object.keys(e || {}).filter((a => a.startsWith("_zaraz_"))).forEach((t => {
+                        try {
+                            a.zarazData["z_" + t.slice(7)] = JSON.parse(e.getItem(t))
+                        } catch {
+                            a.zarazData["z_" + t.slice(7)] = e.getItem(t)
+                        }
+                    }));
+                    z.referrerPolicy = "origin";
+                    z.src = "/cdn-cgi/zaraz/s.js?z=" + btoa(encodeURIComponent(JSON.stringify(a.zarazData)));
+                    t.parentNode.insertBefore(z, t)
+                };
+                ["complete", "interactive"].includes(e.readyState) ? zaraz.init() : a.addEventListener("DOMContentLoaded", zaraz.init)
+            }(w, d, 0, "script");
+        })(window, document);
+    </script>
+</head>
+
+<body>
+
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    
+        <div class="header-bottom">
+            <div class="container">
+                <a href="index.html" class="site-logo">
+                    <script data-pagespeed-no-defer>
+                        //<![CDATA[
+                        (function() {
+                            for (var g = "function" == typeof Object.defineProperties ? Object.defineProperty : function(b, c, a) {
+                                    if (a.get || a.set) throw new TypeError("ES3 does not support getters and setters.");
+                                    b != Array.prototype && b != Object.prototype && (b[c] = a.value)
+                                }, h = "undefined" != typeof window && window === this ? this : "undefined" != typeof global && null != global ? global : this, k = ["String", "prototype", "repeat"], l = 0; l < k.length - 1; l++) {
+                                var m = k[l];
+                                m in h || (h[m] = {});
+                                h = h[m]
+                            }
+                            var n = k[k.length - 1],
+                                p = h[n],
+                                q = p ? p : function(b) {
+                                    var c;
+                                    if (null == this) throw new TypeError("The 'this' value for String.prototype.repeat must not be null or undefined");
+                                    c = this + "";
+                                    if (0 > b || 1342177279 < b) throw new RangeError("Invalid count value");
+                                    b |= 0;
+                                    for (var a = ""; b;)
+                                        if (b & 1 && (a += c), b >>>= 1) c += c;
+                                    return a
+                                };
+                            q != p && null != q && g(h, n, {
+                                configurable: !0,
+                                writable: !0,
+                                value: q
+                            });
+                            var t = this;
+
+                            function u(b, c) {
+                                var a = b.split("."),
+                                    d = t;
+                                a[0] in d || !d.execScript || d.execScript("var " + a[0]);
+                                for (var e; a.length && (e = a.shift());) a.length || void 0 === c ? d[e] ? d = d[e] : d = d[e] = {} : d[e] = c
+                            };
+
+                            function v(b) {
+                                var c = b.length;
+                                if (0 < c) {
+                                    for (var a = Array(c), d = 0; d < c; d++) a[d] = b[d];
+                                    return a
+                                }
+                                return []
+                            };
+
+                            function w(b) {
+                                var c = window;
+                                if (c.addEventListener) c.addEventListener("load", b, !1);
+                                else if (c.attachEvent) c.attachEvent("onload", b);
+                                else {
+                                    var a = c.onload;
+                                    c.onload = function() {
+                                        b.call(this);
+                                        a && a.call(this)
+                                    }
+                                }
+                            };
+                            var x;
+
+                            function y(b, c, a, d, e) {
+                                this.h = b;
+                                this.j = c;
+                                this.l = a;
+                                this.f = e;
+                                this.g = {
+                                    height: window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight,
+                                    width: window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth
+                                };
+                                this.i = d;
+                                this.b = {};
+                                this.a = [];
+                                this.c = {}
+                            }
+
+                            function z(b, c) {
+                                var a, d, e = c.getAttribute("data-pagespeed-url-hash");
+                                if (a = e && !(e in b.c))
+                                    if (0 >= c.offsetWidth && 0 >= c.offsetHeight) a = !1;
+                                    else {
+                                        d = c.getBoundingClientRect();
+                                        var f = document.body;
+                                        a = d.top + ("pageYOffset" in window ? window.pageYOffset : (document.documentElement || f.parentNode || f).scrollTop);
+                                        d = d.left + ("pageXOffset" in window ? window.pageXOffset : (document.documentElement || f.parentNode || f).scrollLeft);
+                                        f = a.toString() + "," + d;
+                                        b.b.hasOwnProperty(f) ? a = !1 : (b.b[f] = !0, a = a <= b.g.height && d <= b.g.width)
+                                    }
+                                a && (b.a.push(e),
+                                    b.c[e] = !0)
+                            }
+                            y.prototype.checkImageForCriticality = function(b) {
+                                b.getBoundingClientRect && z(this, b)
+                            };
+                            u("pagespeed.CriticalImages.checkImageForCriticality", function(b) {
+                                x.checkImageForCriticality(b)
+                            });
+                            u("pagespeed.CriticalImages.checkCriticalImages", function() {
+                                A(x)
+                            });
+
+                            function A(b) {
+                                b.b = {};
+                                for (var c = ["IMG", "INPUT"], a = [], d = 0; d < c.length; ++d) a = a.concat(v(document.getElementsByTagName(c[d])));
+                                if (a.length && a[0].getBoundingClientRect) {
+                                    for (d = 0; c = a[d]; ++d) z(b, c);
+                                    a = "oh=" + b.l;
+                                    b.f && (a += "&n=" + b.f);
+                                    if (c = !!b.a.length)
+                                        for (a += "&ci=" + encodeURIComponent(b.a[0]), d = 1; d < b.a.length; ++d) {
+                                            var e = "," + encodeURIComponent(b.a[d]);
+                                            131072 >= a.length + e.length && (a += e)
+                                        }
+                                    b.i && (e = "&rd=" + encodeURIComponent(JSON.stringify(B())), 131072 >= a.length + e.length && (a += e), c = !0);
+                                    C = a;
+                                    if (c) {
+                                        d = b.h;
+                                        b = b.j;
+                                        var f;
+                                        if (window.XMLHttpRequest) f =
+                                            new XMLHttpRequest;
+                                        else if (window.ActiveXObject) try {
+                                            f = new ActiveXObject("Msxml2.XMLHTTP")
+                                        } catch (r) {
+                                            try {
+                                                f = new ActiveXObject("Microsoft.XMLHTTP")
+                                            } catch (D) {}
+                                        }
+                                        f && (f.open("POST", d + (-1 == d.indexOf("?") ? "?" : "&") + "url=" + encodeURIComponent(b)), f.setRequestHeader("Content-Type", "application/x-www-form-urlencoded"), f.send(a))
+                                    }
+                                }
+                            }
+
+                            function B() {
+                                var b = {},
+                                    c;
+                                c = document.getElementsByTagName("IMG");
+                                if (!c.length) return {};
+                                var a = c[0];
+                                if (!("naturalWidth" in a && "naturalHeight" in a)) return {};
+                                for (var d = 0; a = c[d]; ++d) {
+                                    var e = a.getAttribute("data-pagespeed-url-hash");
+                                    e && (!(e in b) && 0 < a.width && 0 < a.height && 0 < a.naturalWidth && 0 < a.naturalHeight || e in b && a.width >= b[e].o && a.height >= b[e].m) && (b[e] = {
+                                        rw: a.width,
+                                        rh: a.height,
+                                        ow: a.naturalWidth,
+                                        oh: a.naturalHeight
+                                    })
+                                }
+                                return b
+                            }
+                            var C = "";
+                            u("pagespeed.CriticalImages.getBeaconData", function() {
+                                return C
+                            });
+                            u("pagespeed.CriticalImages.Run", function(b, c, a, d, e, f) {
+                                var r = new y(b, c, a, e, f);
+                                x = r;
+                                d && w(function() {
+                                    window.setTimeout(function() {
+                                        A(r)
+                                    }, 0)
+                                })
+                            });
+                        })();
+
+                        pagespeed.CriticalImages.Run('/mod_pagespeed_beacon', 'https://preview.colorlib.com/theme/foodblog/about.html', '-ilGEe-FWC', true, false, 'Gxi3u51g2kM');
+                        //]]>
+                    </script><img src="data:image/webp;base64,UklGRlQFAABXRUJQVlA4TEgFAAAv+YANEPdAkG1Tu7vc32EKAoEUZ7fLAoEUZ7fLAgHCgv9ICRKsRvEHBqTb1lYlF55SEcWvzGO+93+dBi8vD7XbPyP678BtG0dyrs412TtbZm5foL60squqNMDGI/6IskZWXyJMDB8tk8nqS4SKoWqHHypB3YbfrSzvP1d5FayvESCG3L8MHyWAhe9VgGho3YbqB0spWzqX/hdLWedh87XqzVU9giyay6aRaj0WPiZ5LgDbWFl9Y3Zr2iYiY7jK1qZQL1BcLkDb8bLeps3fuLc2AVlXBLASSAkUn0ucbZx6HtddXj2crA5i3ewHCJALwDZAOpcezkDJagFWBZcRvAWQS7xtgHqXsWgdE31beJagZK0H1hgnMAesRat5s3QBLkAusbYBsu6SbMMGCgskM5kA7EIdsBryt5EAFyaXeNsihXuo5lG06wBIVknA+jyroRqcIygT4ELkEms7XgO/nAJLM7cwMhN07MHkQPVN7pEHuBC5AGy7Klq+DLdei3KpXJsoMmmnajL0GLEwKixELgDbIYuBpVe43Tu8W3Z2WTCyXAhmwaq8bwsIkEuk7QixnbgI4HI2LIisF4PdwDelFgiSS5ztCLELrRbzGhCZFoNp3LxA6T0YwkLkEm/bVWn48uy1gu0Wy6MxZBFgBvmxrvIODXiu5LmYyI95vJ2Yp8WQRYCBj6C0e2jAK3kuCiMj4dGeIwCZECzd6LjhlTwX9W+84XYe9utu2ghHALKkzeItBrS5Tdf87R+rZDDNx30sQuxeWNjnQWRGDFYnURVAwOQSYTtqvBB3bGYAx44meOzYh8FsjlYnECaXaNtCfch4gevxtzBYm6HVCJ5gcomyjRojahnuACPrMtFmvQeMEWV9ow2MEQG5AGzHSdWBSSXWQwMkKzywRPMCgeH/EOAC5BJp+5vmgnIWTMPngqx7rfBzQZG2AfN/JnMduH+dD9z8GpKs8cC0C6ZLpyvgNJgmz2T/agFyAdiOldKZX2XpE+QaTFZzYJX3AypWstKBJQLIBWAbINXnYe9FDyerg1iVTaBcMAsWnQvANkLKNiHvrYWQRfy54m0N4KoF52pEuwbYxkgp25bcuTI2EZmuPKyiGRRaVa1l5+fE5YK0DSnvTK2kZN5cS4KC5wKy7em31n+AjDd2/G3lnsgQMVv00+r97XnEzMFvqyY0lmJHWLn6ddW7J/GFx8/uK+M4cjBjgEI9eCQPLpJ0+lOiGh9CGs+OkFqaB6CkK1RpZUPOhYjO2bdMRDT5aMtJtI4M0sLBcaQjETFEzzeoEtST6JDkddB2YZ+czfkk2kcOi+h19yCWt7tElyF3HnYcSJV5715ons+TCXObJt/ZTMey0yrSNh1093VMTBc5aNpJ0q+O10yzhIbo7/LG6HnZ3GhXnIeFoVhoniaVqLR/Npa53j50tYfhmJkudyMjztlBfxfWLNKiVnqwGhnS5S7qERtNorXveHfY/RJvc6MHgzFenlg9VKrSmaRK65g5DrZDsb35eHngAr0OOrgnXGj3nWgLO1Yr0Tkq2ZPjTgen013+DNbxopl9ciQ8lhAMI2/WNbPSzsY6smv4XY3Cm32ZR8XccKSP6b5L1qdz+zt3DoazNdN+chHvdPfe52GtnIWFpgTvjDhVr+gYMxtNsuYnvZaDXbcEBILmq2WT6HXMxKNyq9FJK6fpsrnTxmK9zjFlc/D0zLrwWupOKUZ/5yH82HzSuaoIBT4W9eR50j5zbthIN3pwUs+XuwtjsJ60hj6WuobwGPVtZBTvr6UMrnUhKb+3DyCPcpqAtaDPMXQc8WmlAA=="
+                        alt="" data-pagespeed-url-hash="4068877574" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                </a>
+                <div class="nav-switch">
+                    <i class="fa fa-bars"></i>
+                </div>
+               
+                <ul class="main-menu">
+                    <li><a href="index.html">Home</a></li>
+                    
+                    <li><a href="recipes.html">Food</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="page-top-section set-bg" data-setbg="img/page-top-bg.jpg">
+        <div class="container">
+            <h2>About Me</h2>
+        </div>
+    </section>
+
+
+   
+
+
+    <section class="about-section spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 about-text">
+                    <h2>Hey I'm Aarzoo</h2>
+                    <p> Welcome To My Food Blog, I'm A Former Software Engineer, Now Full Time Blogger.I Live In Bangalore. Favorite Things Include My Camera, Lake Days, And Dark Chocolate.</p>
+                   
+                </div>
+                <div class="col-lg-6">
+                    <img src="img/about.jpg" alt="" data-pagespeed-url-hash="1162979360" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
+
+
+    
+
+    <div class="gallery">
+        <div class="gallery-slider owl-carousel">
+            <div class="gs-item set-bg" data-setbg="img/instagram/1.jpg"></div>
+            <div class="gs-item set-bg" data-setbg="img/instagram/2.jpg"></div>
+            <div class="gs-item set-bg" data-setbg="img/instagram/3.jpg"></div>
+            <div class="gs-item set-bg" data-setbg="img/instagram/4.jpg"></div>
+            <div class="gs-item set-bg" data-setbg="img/instagram/5.jpg"></div>
+            <div class="gs-item set-bg" data-setbg="img/instagram/6.jpg"></div>
+        </div>
+    </div>
+
+
+    <footer class="footer-section set-bg" data-setbg="img/footer-bg.jpg">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="footer-logo">
+                        <img src="data:image/webp;base64,UklGRlQFAABXRUJQVlA4TEgFAAAv+YANEPdAkG1Tu7vc32EKAoEUZ7fLAoEUZ7fLAgHCgv9ICRKsRvEHBqTb1lYlF55SEcWvzGO+93+dBi8vD7XbPyP678BtG0dyrs412TtbZm5foL60squqNMDGI/6IskZWXyJMDB8tk8nqS4SKoWqHHypB3YbfrSzvP1d5FayvESCG3L8MHyWAhe9VgGho3YbqB0spWzqX/hdLWedh87XqzVU9giyay6aRaj0WPiZ5LgDbWFl9Y3Zr2iYiY7jK1qZQL1BcLkDb8bLeps3fuLc2AVlXBLASSAkUn0ucbZx6HtddXj2crA5i3ewHCJALwDZAOpcezkDJagFWBZcRvAWQS7xtgHqXsWgdE31beJagZK0H1hgnMAesRat5s3QBLkAusbYBsu6SbMMGCgskM5kA7EIdsBryt5EAFyaXeNsihXuo5lG06wBIVknA+jyroRqcIygT4ELkEms7XgO/nAJLM7cwMhN07MHkQPVN7pEHuBC5AGy7Klq+DLdei3KpXJsoMmmnajL0GLEwKixELgDbIYuBpVe43Tu8W3Z2WTCyXAhmwaq8bwsIkEuk7QixnbgI4HI2LIisF4PdwDelFgiSS5ztCLELrRbzGhCZFoNp3LxA6T0YwkLkEm/bVWn48uy1gu0Wy6MxZBFgBvmxrvIODXiu5LmYyI95vJ2Yp8WQRYCBj6C0e2jAK3kuCiMj4dGeIwCZECzd6LjhlTwX9W+84XYe9utu2ghHALKkzeItBrS5Tdf87R+rZDDNx30sQuxeWNjnQWRGDFYnURVAwOQSYTtqvBB3bGYAx44meOzYh8FsjlYnECaXaNtCfch4gevxtzBYm6HVCJ5gcomyjRojahnuACPrMtFmvQeMEWV9ow2MEQG5AGzHSdWBSSXWQwMkKzywRPMCgeH/EOAC5BJp+5vmgnIWTMPngqx7rfBzQZG2AfN/JnMduH+dD9z8GpKs8cC0C6ZLpyvgNJgmz2T/agFyAdiOldKZX2XpE+QaTFZzYJX3AypWstKBJQLIBWAbINXnYe9FDyerg1iVTaBcMAsWnQvANkLKNiHvrYWQRfy54m0N4KoF52pEuwbYxkgp25bcuTI2EZmuPKyiGRRaVa1l5+fE5YK0DSnvTK2kZN5cS4KC5wKy7em31n+AjDd2/G3lnsgQMVv00+r97XnEzMFvqyY0lmJHWLn6ddW7J/GFx8/uK+M4cjBjgEI9eCQPLpJ0+lOiGh9CGs+OkFqaB6CkK1RpZUPOhYjO2bdMRDT5aMtJtI4M0sLBcaQjETFEzzeoEtST6JDkddB2YZ+czfkk2kcOi+h19yCWt7tElyF3HnYcSJV5715ons+TCXObJt/ZTMey0yrSNh1093VMTBc5aNpJ0q+O10yzhIbo7/LG6HnZ3GhXnIeFoVhoniaVqLR/Npa53j50tYfhmJkudyMjztlBfxfWLNKiVnqwGhnS5S7qERtNorXveHfY/RJvc6MHgzFenlg9VKrSmaRK65g5DrZDsb35eHngAr0OOrgnXGj3nWgLO1Yr0Tkq2ZPjTgen013+DNbxopl9ciQ8lhAMI2/WNbPSzsY6smv4XY3Cm32ZR8XccKSP6b5L1qdz+zt3DoazNdN+chHvdPfe52GtnIWFpgTvjDhVr+gYMxtNsuYnvZaDXbcEBILmq2WT6HXMxKNyq9FJK6fpsrnTxmK9zjFlc/D0zLrwWupOKUZ/5yH82HzSuaoIBT4W9eR50j5zbthIN3pwUs+XuwtjsJ60hj6WuobwGPVtZBTvr6UMrnUhKb+3DyCPcpqAtaDPMXQc8WmlAA=="
+                            alt="">
+                    </div>
+                   
+                </div>
+                <div class="col-lg-6 text-lg-right">
+                    <ul class="footer-menu">
+                        <li><a href="index.html">Home</a></li>
+                        
+                        <li><a href="recipes.html">Food</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <p class="copyright">
+                        Copyright &copy;
+                        <script>
+                            document.write(new Date().getFullYear());
+                        </script> All rights reserved | This Website is made by Aarzoo BCA 3B</a>
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-23581568-13');
+    </script>
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"75978feb7df2860f","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2022.8.1","si":100}'
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
